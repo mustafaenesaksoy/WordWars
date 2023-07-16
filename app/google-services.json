@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "428124155377",
+    "project_id": "wordwars-220e9",
+    "storage_bucket": "wordwars-220e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428124155377:android:4bc40eb47e90dd194c6850",
+        "android_client_info": {
+          "package_name": "com.enesaksoy.wordwars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428124155377-cafb643dg4vmb1dqsqh7kkg5s5k9qcul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARErhd1fALGE8CQaFY_PqVHvZgjEKCGk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428124155377-cafb643dg4vmb1dqsqh7kkg5s5k9qcul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

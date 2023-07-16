@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/modeFragment">
+
+    <fragment
+        android:id="@+id/modeFragment"
+        android:name="com.enesaksoy.wordwars.view.ModeFragment"
+        android:label="ModeFragment" >
+        <action
+            android:id="@+id/action_modeFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+        <action
+            android:id="@+id/action_modeFragment_to_intoFragment"
+            app:destination="@id/intoFragment" />
+        <action
+            android:id="@+id/action_modeFragment_to_matchingFragment"
+            app:destination="@id/matchingFragment" />
+        <action
+            android:id="@+id/action_modeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.enesaksoy.wordwars.view.LevelFragment"
+        android:label="LevelFragment" >
+        <action
+            android:id="@+id/action_levelFragment_to_gameFragment"
+            app:destination="@id/gameFragment" >
+            <argument
+                android:name="level" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.enesaksoy.wordwars.view.OffGameFragment"
+        android:label="GameFragment" >
+        <action
+            android:id="@+id/action_gameFragment_to_modeFragment"
+            app:destination="@id/modeFragment" />
+        <argument
+            android:name="level"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_gameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intoFragment"
+        android:name="com.enesaksoy.wordwars.view.IntroFragment"
+        android:label="IntoFragment" >
+        <action
+            android:id="@+id/action_intoFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_intoFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.enesaksoy.wordwars.view.SignInFragment"
+        android:label="SignInFragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_matchingFragment"
+            app:destination="@id/matchingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.enesaksoy.wordwars.view.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_matchingFragment"
+            app:destination="@id/matchingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchingFragment"
+        android:name="com.enesaksoy.wordwars.view.MatchingFragment"
+        android:label="MatchingFragment" >
+        <action
+            android:id="@+id/action_matchingFragment_to_onGameFragment"
+            app:destination="@id/onGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.enesaksoy.wordwars.view.AccountFragment"
+        android:label="AccountFragment" >
+        <action
+            android:id="@+id/action_accountFragment_to_modeFragment"
+            app:destination="@id/modeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.enesaksoy.wordwars.view.ResultFragment"
+        android:label="ResultFragment" >
+        <action
+            android:id="@+id/action_resultFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_modeFragment"
+            app:destination="@id/modeFragment" />
+        <argument android:name="isWon"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultFragment_to_intoFragment"
+            app:destination="@id/intoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onGameFragment"
+        android:name="com.enesaksoy.wordwars.view.OnGameFragment"
+        android:label="OnGameFragment" >
+        <action
+            android:id="@+id/action_onGameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_onGameFragment_to_modeFragment"
+            app:destination="@id/modeFragment" />
+        <argument
+            android:name="word"
+            app:argType="string" />
+        <argument
+            android:name="isHome"
+            app:argType="boolean" />
+    </fragment>
+</navigation>

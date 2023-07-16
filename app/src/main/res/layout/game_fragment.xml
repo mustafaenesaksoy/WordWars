@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EF8F00"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/back_icon"
+            android:background="@drawable/spinner_bg"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            />
+        <TextView
+            android:id="@+id/keywordText"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="the field where the keyword is specified"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/editbackground">
+        </TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gameRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editbackground"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="30"
+        android:progress="0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/wordText"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="4dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:hint="enter the word"
+            android:textColor="@color/black"
+            android:textColorHint="#877575"
+            android:paddingStart="8dp"
+            android:background="@drawable/editbackground"/>
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:src="@drawable/send_icon"
+            android:layout_weight="5"
+            android:clickable="false"
+            android:layout_marginEnd="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/with_btn_background">
+        </ImageButton>
+    </LinearLayout>
+
+</LinearLayout>

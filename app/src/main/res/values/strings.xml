@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WordWars</string>
+    <string-array name="modeList">
+        <item>Offline</item>
+        <item>Online</item>
+    </string-array>
+    <string-array name="levelList">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Difficult</item>
+    </string-array>
+</resources>

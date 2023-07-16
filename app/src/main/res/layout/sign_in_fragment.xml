@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/editbackground">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="60dp"
+        android:inputType="textPassword"
+        android:background="@drawable/editbackground">
+
+    </EditText>
+    <TextView
+        android:id="@+id/forgotPasswordtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:text="forgot your password?"
+        android:textColor="#CFCFCF"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"
+        style="@android:style/Widget.Button"
+        android:textColor="@color/white">
+
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#706F6F"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or Login with"
+            android:textColor="#B8B8B8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp">
+        </TextView>
+        <View
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#706F6F"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+        </View>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/googleButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/with_btn_background"
+        android:drawableStart="@drawable/googleg_standard_color_18"
+        android:padding="10dp"
+        android:text="Google"
+        android:textColor="#0045F3"
+        android:textSize="16sp">
+
+    </Button>
+
+
+</LinearLayout>
